@@ -406,6 +406,22 @@ ul.countdown li p {
    7.Twitter feed
    ========================================================================== */
 
+.twitter-share-button {
+	width: 56px !important;
+	margin-left: 3px; }
+.fb-share-button {
+    vertical-align: top; }
+.fb_iframe_widget {
+	margin-bottom: 2px; }
+.fb_iframe_widget span {
+    vertical-align: top !important; }
+.tlt span span {
+	display: block; }
+.twitter-feed {
+  color: #fff;
+  position: relative;
+}
+
 .twitter-feed {
   color: #fff;
   position: relative;
