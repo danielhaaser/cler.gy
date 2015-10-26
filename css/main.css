@@ -867,10 +867,6 @@ span.features_title_small{
 /* ----- Dropcaps ----- */
 .dropcaps_left, .dropcaps_right {
 	float:left;
-	width: 26px;
-	height: 26px;
-	line-height: 22px;
-	padding:15px 15px;
 	text-align: center;
 	color:#222;
 	font-size: 26px;
@@ -907,6 +903,68 @@ span.features_title_small{
 	-moz-transition: all .50s ease-in-out;
 	-webkit-transition: all .50s ease-in-out;
 }
+
+.icoall {
+	background-repeat:no-repeat; 
+	background-size: 24px 24px;
+	background-position: 50%;
+	width: 24px;
+	height: 24px;
+	padding: 24px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.icovideo {
+	background-image:url('../img/icons/videocall.svg');
+}
+
+.features_item:hover .icovideo {
+	background-image:url('../img/icons/videocall-white.svg');
+}
+
+.icolock {
+	background-image:url('../img/icons/lock.svg');
+}
+
+.features_item:hover .icolock {
+	background-image:url('../img/icons/lock-white.svg');
+}
+
+.icomanuals {
+	background-image:url('../img/icons/manuals.svg');
+}
+
+.features_item:hover .icomanuals {
+	background-image:url('../img/icons/manuals-white.svg');
+}
+
+.icopick {
+	background-image:url('../img/icons/picks.svg');
+}
+
+.features_item:hover .icopick {
+	background-image:url('../img/icons/picks-white.svg');
+}
+
+.icosins {
+	background-image:url('../img/icons/todolist.svg');
+}
+
+.features_item:hover .icosins {
+	background-image:url('../img/icons/todolist-white.svg');
+}
+
+.icostar {
+	background-image:url('../img/icons/star.svg');
+}
+
+.features_item:hover .icostar {
+	background-image:url('../img/icons/star-white.svg');
+}
+
 
 
 
