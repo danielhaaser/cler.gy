@@ -660,10 +660,10 @@ ul.countdown li p { font-size: 20px; }
    14.Medium devices (desktops, 992px and up)
    ========================================================================== */
 
-@media (min-width: 992px) {
-
 html,
 body { height: 100%; }
+
+@media (min-width: 992px) {
 
 .logo {
 	margin: 0;
