@@ -7,11 +7,11 @@ $(function() {
     /* ==========================================================================
    Preload
    ========================================================================== */
-    
+
     $(window).load(function() {
-        
+
         $("#status").fadeOut();
-        
+
         $("#preloader").delay(100).fadeOut("slow");
     });
 
@@ -19,7 +19,7 @@ $(function() {
     /* ==========================================================================
    On Scroll animation
    ========================================================================== */
-    
+
     if ($(window).width() > 992) {
         new WOW().init();
     }
@@ -27,7 +27,7 @@ $(function() {
     /* ==========================================================================
    Smooth Scroll
    ========================================================================== */
-    
+
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -42,11 +42,21 @@ $(function() {
     });
 
 
+    /* ==========================================================================
+    Hero image hover
+    ========================================================================== */
+    $(".hero-img").hover(function() {
+        // on enter
+        $(this).attr("src", "img/hero2.png");
+    }, function() {
+        // on exit
+        $(this).attr("src", "img/hero.png");
+    });
 
     /* ==========================================================================
    App screenshot slider
    ========================================================================== */
-    
+
     $(".screenshot-slider").owlCarousel({
         autoPlay: 3000, //Set AutoPlay speed
         items: 4,
@@ -57,8 +67,8 @@ $(function() {
     /* ==========================================================================
    Tweet
    ========================================================================== */
-    
-    
+
+
     $('.tweet').twittie({
         username: 'envatomarket', // change username here
         dateFormat: '%b. %d, %Y',
@@ -66,7 +76,7 @@ $(function() {
         count: 10
     }, function() {
         var item = $('.tweet ul');
-        
+
         item.children('li').first().show().siblings().hide();
         setInterval(function() {
             item.find('li:visible').fadeOut(500, function() {
@@ -79,7 +89,7 @@ $(function() {
     /* ==========================================================================
    countdown
    ========================================================================== */
-    
+
     $('.countdown').downCount({
         date: '12/15/2015 12:00:00' // m/d/y
     });
@@ -88,16 +98,16 @@ $(function() {
     /* ==========================================================================
      sub form
      ========================================================================== */
-    
+
     function loading() {
         $('#mc-notification').show().html('Sending...');
     }
-    
+
     function formResult(data) {
         $('#mc-notification').html(data);
         $('#mc-form input').val('');
     }
-    
+
     function onSubmit() {
         $('#mc-form').submit(function() {
             var action = $(this).attr('action');
@@ -124,8 +134,8 @@ $(function() {
     /* ==========================================================================
        Contact Form
        ========================================================================== */
-    
-    
+
+
     $('#contact-form').validate({
         rules: {
             name: {
@@ -136,7 +146,7 @@ $(function() {
                 required: true,
                 email: true
             },
-            
+
             message: {
                 required: true,
                 minlength: 10
@@ -176,8 +186,8 @@ $(function() {
     /* ==========================================================================
    ScrollTop Button
    ========================================================================== */
-    
-    
+
+
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('.scroll-top a').fadeIn(200);
@@ -185,22 +195,22 @@ $(function() {
             $('.scroll-top a').fadeOut(200);
         }
     });
-    
-    
+
+
     $('.scroll-top a').click(function(event) {
         event.preventDefault();
-        
+
         $('html, body').animate({
             scrollTop: 0
         }, 1000);
     });
 
     /* ==========================================================================
-   parallax scrolling 
+   parallax scrolling
    ========================================================================== */
-    
-    
-		
+
+
+
 		if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
         		if($(window).width()>992){skrollr.init({forceHeight:false})}$(window).on("resize",function(){if($(window).width()<=	992){skrollr.init().destroy()}});$(window).on("resize",function(){if($(window).width()>992){skrollr.init({forceHeight:false})}});
     }
@@ -208,33 +218,33 @@ $(function() {
     /* ==========================================================================
    sticky nav
    ========================================================================== */
-    
-    
-    
+
+
+
     var menu = $('.navbar');
-    
+
     var stickyNav = menu.offset().top;
-    
+
     $(window).scroll(function() {
         if ($(window).scrollTop() > $(window).height()) {
             menu.addClass('stick');
         } else {
             menu.removeClass('stick');
-        
+
         }
     });
-		
-		
+
+
     /* ==========================================================================
    Fade
    ========================================================================== */
-    
+
     $(window).scroll(function(e) {
-        var s = $(window).scrollTop(), 
-        d = $(document).height(), 
-        c = $(window).height(), 
+        var s = $(window).scrollTop(),
+        d = $(document).height(),
+        c = $(window).height(),
         opacityVal = (s / 400);
         $('.main .overlay').css('opacity', opacityVal);
-    });			
+    });
 
 });
