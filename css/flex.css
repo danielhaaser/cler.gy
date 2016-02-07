@@ -95,16 +95,4 @@
   -ms-flex: 2 0 auto;
 }
 
-@media (max-width: 768px) {
-.mobile-order1 {
-	order: 1;
-	margin: 10px 25px 40px 0px;
-}
-
-.mobile-order2 {
-	order: 2;
-	text-align: left;
-}
-}
-
 
