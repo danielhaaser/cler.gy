@@ -132,6 +132,10 @@ li {
 
 .navbar { display: none; }
 
+.navbar-default .navbar-collapse {
+	margin-top: 1.2em;
+}
+
 .navbar .container { width: 100%; }
 
 .navbar-default .navbar-nav > li > a.btn-default {
@@ -657,11 +661,6 @@ nav .social {
 
 @media (min-width: 768px) {
 
-.navbar-default .navbar-nav > li > a.btn-default {
-	width: auto;
-	margin: auto;
-}
-
 .main { padding: 3em 0 4.5em; }
 
 .welcome-message { padding-top: 2.25em; }
@@ -684,6 +683,11 @@ ul.countdown li p { font-size: 20px; }
    ========================================================================== */
 
 @media (min-width: 992px) {
+
+.navbar-default .navbar-nav > li > a.btn-default {
+	width: auto;
+	margin: auto;
+}
 
 nav .social {
 		margin: 0px 20px 0px 10px;
