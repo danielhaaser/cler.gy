@@ -24,6 +24,8 @@
    1.General
    ========================================================================== */
 
+html,
+body { height: 100%; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -71,14 +73,8 @@ li {
    ========================================================================== */
 
 .logo {
-	max-width: 466px;
 	padding-bottom: 10px;
 	margin: 0 auto;
-}
-
-.welcome-message h3 {
-	font-size: 42px;
-	font-weight: 300;
 }
 
 .main {
@@ -109,41 +105,25 @@ li {
 }
 
 .main h1,
-.main h2 { font-weight: 300; }
+.main h2,
+.main h3 { font-weight: 300; }
 
 .main h1 span { font-weight: 400; }
 
-.welcome-message { padding-top: 1.5em; }
+.welcome-message { max-width:466px; padding-top: 1.5em; }
 
-.action-btn { margin: 1.5em 0 3em; }
-
-.action-btn .btn-default {
-  color: #FFFFFF;
-  background-color: #9834DB;
-  border-color: #9834DB;
-  display: block;
+.welcome-message h3 {
+  margin-top: 36px;
+  font-size: 2.2rem;
+  margin-bottom: 14px;
 }
 
-.action-btn .btn-default:hover,
-.action-btn .btn-default:focus,
-.action-btn .btn-default:active {
-  background-color: #D92DF2;
-  border-color: #D92DF2;
+.welcome-message .form-inline .form-control {
+	margin-bottom: 10px;
 }
 
-.action-btn a:first-child { margin: 0 0 0.75em 0; }
-
-.main .social {
-  float: none;
-}
-
-.main .social li a {
-  color: #FFFFFF;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border: 1px solid #FFFFFF;
-  font-size: 1em;
+.welcome-message .form-inline .form-control, .welcome-message .form-inline .btn-default {
+	width: 100%;
 }
 
 /* ==========================================================================
@@ -572,10 +552,23 @@ button.close {
    11.Social
    ========================================================================== */
 
+.main .social li a {
+  color: #FFFFFF;
+  width: 54px;
+  height: 54px;
+	line-height: 53px;
+	border: 2px solid #FFFFFF;
+	font-size: 1.3em;
+}
+
+.main .social {
+	margin-top: 20px;
+}
 
 .social li {
   display: inline-block;
   padding-right: .8em;
+  text-align: center;
 }
 
 .social li:last-child { padding-right: 0; }
@@ -596,7 +589,7 @@ button.close {
 
 .social li a:hover {
   color: #fff;
-  border: 1px solid #D92DF2;
+  border: 2px solid #D92DF2;
   background: #D92DF2;
 }
 
@@ -641,12 +634,6 @@ button.close {
 
 .main h1 { font-size: 60px; }
 
-.main h2 { font-size: 48px; }
-
-.action-btn .btn-default { display: inline-block; }
-
-.action-btn a:first-child { margin: 0 1.5em 0 0; }
-
 ul.countdown li span { font-size: 48px; }
 
 ul.countdown li.seperator {
@@ -662,8 +649,19 @@ ul.countdown li p { font-size: 20px; }
    14.Medium devices (desktops, 992px and up)
    ========================================================================== */
 
-html,
-body { height: 100%; }
+@media (min-width: 550px) {
+.welcome-message .form-inline .form-control {
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+.welcome-message .form-inline .btn-default {
+	width: auto;
+}
+
+}
 
 @media (min-width: 992px) {
 
@@ -701,10 +699,6 @@ body { height: 100%; }
   right: 0;
 }
 
-.main .social {
-  float: right;
-}
-
 .hero-img {
     margin-top: 1.5em;
     /*background-image: url('../img/hero.png');*/
@@ -715,8 +709,6 @@ body { height: 100%; }
 }*/
 
 .welcome-message { padding-top: 6.75em; }
-
-.action-btn { margin: 1.5em 0 0; }
 
 .section-spacing { padding: 6em 0; }
 
@@ -981,13 +973,37 @@ span.features_title_small{
     background-image:url('../img/icons/screen-white.svg');
 }
 
-@media (max-width: 768px) {
-.mobile-order1 {
-	order: 1;
-	margin: 10px 25px 40px 0px;
+
+/*MAX WIDTH RULES*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.primeimage {
+		text-align: right;
+	}
 }
 
-.mobile-order2 {
-	order: 2;
-	text-align: left;
+@media (max-width: 992px) {
+	.welcome-message {
+		margin: 0 auto 50px auto;
+		max-width: 80%;
+	}
 }
+
+@media (max-width: 768px) {
+	.mobile-order1 {
+		order: 1;
+		margin: 10px 25px 40px 0px;
+	}
+
+	.mobile-order2 {
+		order: 2;
+		text-align: left;
+	}
+}
+
+@media (max-width: 500px) {
+	.welcome-message {
+		max-width: 96%;
+	}
+}
+
