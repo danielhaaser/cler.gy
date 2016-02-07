@@ -132,6 +132,8 @@ li {
 
 .navbar { display: none; }
 
+.navbar .container { width: 100%; }
+
 .navbar-default .navbar-nav > li > a.btn-default {
   text-transform: capitalize;
   color: #fff;
@@ -561,8 +563,19 @@ button.close {
 	font-size: 1.3em;
 }
 
+.main.social li a:hover {
+  color: #fff;
+  border: 2px solid #D92DF2;
+  background: #D92DF2;
+}
+
 .main .social {
 	margin-top: 20px;
+}
+
+nav .social {
+	margin: 10px 0px 20px 0px;
+	text-align: center;
 }
 
 .social li {
@@ -589,7 +602,7 @@ button.close {
 
 .social li a:hover {
   color: #fff;
-  border: 2px solid #D92DF2;
+  border: 1px solid #D92DF2;
   background: #D92DF2;
 }
 
@@ -616,6 +629,27 @@ button.close {
 }
 
 .scroll-top a:hover { background: #D92DF2; }
+
+
+
+/* ==========================================================================
+   13.Small devices (tablets, 550px and up)
+   ========================================================================== */
+
+
+
+@media (min-width: 550px) {
+	.welcome-message .form-inline .form-control {
+		display: inline-block;
+		width: auto;
+		vertical-align: middle;
+		margin-bottom: 0;
+	}
+
+	.welcome-message .form-inline .btn-default {
+		width: auto;
+	}
+}
 
 /* ==========================================================================
    13.Small devices (tablets, 768px and up)
@@ -649,21 +683,13 @@ ul.countdown li p { font-size: 20px; }
    14.Medium devices (desktops, 992px and up)
    ========================================================================== */
 
-@media (min-width: 550px) {
-.welcome-message .form-inline .form-control {
-	display: inline-block;
-	width: auto;
-	vertical-align: middle;
-	margin-bottom: 0;
-}
-
-.welcome-message .form-inline .btn-default {
-	width: auto;
-}
-
-}
-
 @media (min-width: 992px) {
+
+nav .social {
+		margin: 0px 20px 0px 10px;
+}
+
+.navbar .container { width: 970px; }
 
 .logo {
 	margin: 0;
@@ -750,6 +776,11 @@ ul.countdown li p { font-size: 20px; }
 }
 }
 
+@media (min-width: 1200px) {
+
+.navbar .container { width: 1170px; }
+
+}
 /* ==========================================================================
    16.small devices
    ========================================================================== */
