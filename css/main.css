@@ -874,8 +874,9 @@ span.features_title_small{
 }
 
 /* ----- Dropcaps ----- */
+
 .dropcaps_left, .dropcaps_right {
-	float:left;
+	height: 48px;
 	text-align: center;
 	color:#222;
 	font-size: 26px;
@@ -895,12 +896,10 @@ span.features_title_small{
 }
 
 .dropcaps_left {
-	float:left;
 	margin:10px 25px 40px 0;
 }
 
 .dropcaps_right {
-	float:right;
 	margin:10px 0 40px 25px;
 }
 
