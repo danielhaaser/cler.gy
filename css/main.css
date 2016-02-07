@@ -974,6 +974,14 @@ span.features_title_small{
 	background-image:url('../img/icons/star-white.svg');
 }
 
+.privacy-screen {
+    background-image:url('../img/icons/screen.svg');
+}
+
+.features_item:hover .privacy-screen {
+    background-image:url('../img/icons/screen-white.svg');
+}
+
 
 
 
