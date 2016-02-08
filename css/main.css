@@ -252,6 +252,9 @@ li {
 
 .features .row { margin: 4.5em 0; }
 
+.features.morefeatures .row { padding: 4.5em 0; margin:0; }
+
+
 .features .row:last-child { margin-bottom: 0; }
 
 .features article {
@@ -570,25 +573,6 @@ button.close {
    11.Social
    ========================================================================== */
 
-.main .social li a {
-  color: #FFFFFF;
-  width: 54px;
-  height: 54px;
-	line-height: 53px;
-	border: 2px solid #FFFFFF;
-	font-size: 1.3em;
-}
-
-.main.social li a:hover {
-  color: #fff;
-  border: 2px solid #D92DF2;
-  background: #D92DF2;
-}
-
-.main .social {
-	margin-top: 20px;
-}
-
 nav .social {
 	margin: 10px 0px 20px 0px;
 	text-align: center;
@@ -620,6 +604,25 @@ nav .social {
   color: #fff;
   border: 1px solid #D92DF2;
   background: #D92DF2;
+}
+
+.main .social li a {
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+	line-height: 39px;
+	border: 2px solid #FFFFFF;
+	font-size: 1em;
+}
+
+.main .social li a:hover {
+  color: #fff;
+  border: 2px solid #D92DF2;
+  background: #D92DF2;
+}
+
+.main .social {
+	margin: 0 0 0em 1em;
 }
 
 /* ==========================================================================
@@ -673,7 +676,7 @@ nav .social {
 
 @media (min-width: 768px) {
 
-.main { padding: 3em 0 4.5em; }
+.main { padding: .3em 0 4.5em; }
 
 .welcome-message { padding-top: 2.25em; }
 
@@ -716,7 +719,7 @@ nav .social {
 }
 
 .main {
-  padding: 2.5em 0 6em;
+  padding: 1em 0 6em;
   text-align: left;
   background: url(../img/crossback.jpg) center center no-repeat fixed;
   background-size: cover;
@@ -746,8 +749,8 @@ nav .social {
 }
 
 .hero-img {
-    margin-top: 1.5em;
-    /*background-image: url('../img/hero.png');*/
+	width: 300px;
+  /*background-image: url('../img/hero.png');*/
 }
 
 /*.hero-img:hover {
