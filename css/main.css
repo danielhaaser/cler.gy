@@ -136,6 +136,10 @@ li {
 	padding: 1em 0 1em 0;
 }
 
+.navbar-nav {
+	padding-top: 2px;
+}
+
 .navbar-collapse {
 	margin-top: 1em;
 }
