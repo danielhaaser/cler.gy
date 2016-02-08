@@ -132,8 +132,16 @@ li {
 
 .navbar { display: none; }
 
-.navbar-default .navbar-collapse {
-	margin-top: 1.2em;
+.navbar-default {
+	padding: 1em 0 1em 0;
+}
+
+.navbar-collapse {
+	margin-top: 1em;
+}
+
+.navbar-brand>img {
+	width: 132px;
 }
 
 .navbar .container { width: 100%; }
@@ -684,6 +692,10 @@ ul.countdown li p { font-size: 20px; }
 
 @media (min-width: 992px) {
 
+.navbar-collapse {
+	margin-top: 0em;
+}
+
 .navbar-default .navbar-nav > li > a.btn-default {
 	width: auto;
 	margin: auto;
@@ -778,6 +790,7 @@ nav .social {
   background: url(../img/load.gif) no-repeat center center;
   margin: -170px 0 0 -100px;
 }
+
 }
 
 @media (min-width: 1200px) {
