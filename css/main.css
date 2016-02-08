@@ -852,7 +852,7 @@ ul.countdown li p { font-size: 12.642px; }
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.features_left, .features_right{
 		width:100%;
 	}
@@ -1041,7 +1041,20 @@ span.features_title_small{
 	}
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+
+	.features .align-center {
+		align-items: flex-start;
+    -webkit-align-items: flex-start;
+	}
+}
+
 @media (max-width: 768px) {
+
+	.features_center {
+		width: 300px;
+	}
+
 	.mobile-order1 {
 		order: 1;
 		margin: 10px 25px 40px 0px;
