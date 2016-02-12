@@ -35,25 +35,27 @@
 </head>
 
 <body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '',
-      xfbml      : true,
-      version    : 'v2.2'
-    });
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1670455289873080',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+<!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
 
 <!--nav-->
 
@@ -74,7 +76,7 @@
 				<!--social-->
 	        <ul class="social">
 	          <li><a href="https://twitter.com/clergyapp" target="_blank"><i class="fa fa-twitter"></i></a></li>
-	          <li><a href="https://www.facebook.com/clergyapp" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/dialog/share?app_id=145634995501895&amp;display=popup&amp;href=https%3A%2F%2Fcler.gy&amp;redirect_urihttps%3A%2F%2Fcler.gy" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
 	          <li><a href="https://www.instagram.com/clergyapp" target="_blank"><i class="fa fa-instagram"></i></a></li>
 	        </ul>
 	      <!--social end-->
