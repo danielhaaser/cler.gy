@@ -228,7 +228,7 @@ $(function() {
     var stickyNav = menu.offset().top;
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > $(window).height()) {
+        if ($(window).scrollTop() > 500) {
             menu.addClass('stick');
         } else {
             menu.removeClass('stick');
