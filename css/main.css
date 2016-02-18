@@ -84,6 +84,10 @@ li {
   position: relative;
   color: #fff;
   text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .overlay { display: none; }
@@ -113,9 +117,9 @@ li {
 .welcome-message { max-width:466px; padding-top: 1.5em; }
 
 .welcome-message h3 {
-  margin-top: 36px;
+  margin-top: 46px;
   font-size: 2.2rem;
-  margin-bottom: 14px;
+  margin-bottom: 36px;
 }
 
 .welcome-message .form-inline .form-control {
@@ -124,6 +128,33 @@ li {
 
 .welcome-message .form-inline .form-control, .welcome-message .form-inline .btn-default {
 	width: 100%;
+}
+
+.down-arrow {
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	width: 40px;
+	z-index: 300;
+}
+
+.down-arrow.scrolled {
+	display: none;
+}
+
+.header.scrolled img:after {
+  content: ' scrolled';   
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: 0px;
+  visibility: hidden;
+}
+
+.down-arrow img {
+	width: 50px;
 }
 
 /* ==========================================================================
@@ -290,7 +321,7 @@ li {
 
 .sub-form header { margin-bottom: 2.625em; }
 
-.sub-form .form-control {
+.biggerform .form-control {
   padding: 1em 2em;
   border-radius: 30px;
   margin-bottom: 1.5em;
@@ -606,7 +637,7 @@ nav .social {
   background: #D92DF2;
 }
 
-.main .social li a {
+.topper.social li a {
   color: #FFFFFF;
   width: 40px;
   height: 40px;
@@ -615,15 +646,18 @@ nav .social {
 	font-size: 1em;
 }
 
-.main .social li a:hover {
+.topper.social li a:hover {
   color: #fff;
   border: 2px solid #D92DF2;
   background: #D92DF2;
 }
 
-.main .social {
-	margin: 0 0 0em 1em;
-}
+.topper.social {
+	margin: 1em 0 0em 1em;
+    top: 0;
+    position: absolute;
+    z-index: 200;
+}    
 
 /* ==========================================================================
    12.scroll top
@@ -676,8 +710,6 @@ nav .social {
 
 @media (min-width: 768px) {
 
-.main { padding: .3em 0 4.5em; }
-
 .welcome-message { padding-top: 2.25em; }
 
 .main h1 { font-size: 60px; }
@@ -719,7 +751,7 @@ nav .social {
 }
 
 .main {
-  padding: 1em 0 6em;
+  padding: 1em 0 0em;
   text-align: left;
   background: url(../img/crossback.jpg) center center no-repeat fixed;
   background-size: cover;
@@ -845,6 +877,14 @@ ul.countdown li p { font-size: 12.642px; }
 	float:left;
 }
 
+.features_center img {
+	width: 70%;
+}
+
+.smallerimage img {
+	width: 50%;
+}
+
 @media (min-width: 1155px) {
 	.features_left {
 		padding-left: 5%;
@@ -924,6 +964,7 @@ span.features_title_small{
 
 .dropcaps_left, .dropcaps_right {
 	height: 48px;
+	min-width: 48px;
 	text-align: center;
 	color:#222;
 	font-size: 26px;
@@ -965,7 +1006,7 @@ span.features_title_small{
 	background-position: 50%;
 	width: 24px;
 	height: 24px;
-	padding: 24px;
+	padding: 23px;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -1037,11 +1078,28 @@ span.features_title_small{
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.welcome-message {
 		margin: 0 auto 50px auto;
 		max-width: 80%;
 	}
+
+	.topper.social {
+   top: 0;
+    left: 50%;
+    position: absolute;
+    z-index: 200;
+    margin: 40px 0 0 0;
+	}
+
+		.topper.social ul {
+position: relative; left: -50%;
+	}
+
+	.smallerimage img {
+    width: 70%;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1067,11 +1125,25 @@ span.features_title_small{
 		order: 2;
 		text-align: left;
 	}
+
+	.welcome-message {
+		padding-top: 4rem;
+	}
+
 }
 
 @media (max-width: 500px) {
 	.welcome-message {
 		max-width: 96%;
 	}
+		.smallerimage img {
+    width: 90%;
+	}
+
+
+	.welcome-message {
+		padding-top: 6rem;
+	}
+
 }
 

@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,12 +7,12 @@
     <title>Clergy | Convenient Confessions</title>
     <meta name="description" content="Convenient confessions for the Catholic on the go.">
 
-      <meta property="og:title" content="Clergy | Convenient Confessions" />
-      <meta property="og:site_name" content="Clergy" />
-      <meta property="og:url" content="http://cler.gy" />
-      <meta property="og:description" content="Convenient confessions for the Catholic on the go." />
-      <meta property="fb:app_id" content="845391882177053" />
-      <meta property="og:image" content="http://.com/images/-opengraphimg.jpg" />
+		<meta property="og:title" content="Clergy | Convenient Confessions" />
+		<meta property="og:site_name" content="Clergy" />
+		<meta property="og:url" content="http://cler.gy" />
+		<meta property="og:description" content="Convenient confessions for for Catholics on the go." />
+		<meta property="fb:app_id" content="845391882177053" />
+		<meta property="og:image" content="http://cler.gy/img/crossback.jpg" />
 
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -54,7 +53,6 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
-
 <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
 
 <!--nav-->
@@ -70,8 +68,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
+        <li><a href="#sins">Sin Tracker</a></li>
         <li><a href="#videoconfession">Pick-a-Priest&trade;</a></li>
-        <li><a href="#sins">Sin Tracker&trade;</a></li>
         <li>
 				<!--social-->
 	        <ul class="social">
@@ -90,12 +88,10 @@
 <!--nav end-->
 
 <!--main-->
-
-<section class="main" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;" id="home">
-  <div class="overlay" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;"></div>
+	<a href="#features"><img class="down-arrow" src="img/arrow-down.svg" alt=""></a>
 
 		        <!--social-->
-		        <div class="social">
+		        <div class="topper social">
 		          <ul>
 		            <li><a href="https://www.facebook.com/dialog/share?
 		                app_id=145634995501895
@@ -108,19 +104,32 @@
 		        </div>
 		        <!--social end-->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
+<section class="main" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;" id="home" style="        font-size: 16px;
+    background-color: #FFFC00;
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;">
 
-      </div>
-    </div>
-    <div class="row">
-	      <div class="col-md-6 col-md-offset-1" style="margin">
+  <div class="container" style="
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;">
+    <div class="row" style="max-width: 1200px;
+        width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;">
+	      <div class="col-md-6 col-md-offset-1 biggerform" style="margin">
 
 	        <div class="welcome-message text-center">
 	          <div class="logo"><img src="img/logo.svg" alt="logo"></div>
 
-
+		     
 
 	          <h3 style="margin-top:30px;">Coming soon to the App Store!</h3>
 
@@ -147,9 +156,11 @@
 
 <!--main end-->
 
-<section class="features withicons section-spacing" id="features">
+<a class="anchor" id="features"></a>
+
+<section class="features withicons section-spacing">
   <div class="container wide-container">
-    <header class="text-center">
+    <header class="text-center" id="featurestitle">
       <h2>Clergy's Features</h2>
       <h3>Masterfully packaged</h3>
     </header>
@@ -249,7 +260,7 @@
 <section class="features morefeatures section-spacing">
   <div class="container">
 
-    <div class="row" id="videoconfession">
+    <div class="row smallerimage" id="videoconfession">
       <div class="col-md-6 text-center">
           <img src="img/pickAPriestOnDevice.png" alt="Pick a Priest interface" class="wow fadeInLeft" data-no-retina data-wow-offset="250">
       </div>
@@ -261,7 +272,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row smallerimage">
       <div class="col-md-6 col-md-push-6 text-center">
           <img src="img/manualsOfConfessionOnDevice.png" alt="Manuals of Confession interface" class="wow fadeInRight" data-no-retina data-wow-offset="250">
       </div>
@@ -273,13 +284,13 @@
       </div>
     </div>
 
-    <div class="row" id="sins">
+    <div class="row smallerimage" id="sins">
       <div class="col-md-6 text-center">
           <img src="img/sinTrackerOnDevice.png" alt="Sin Tracker interface" class="wow fadeInLeft" data-no-retina data-wow-offset="250">
       </div>
       <div class="col-md-6 sideby-feat">
         <article>
-          <h4>Sin Tracker</h4>
+          <h4>Sin Tracker&trade;</h4>
           <p>Quickly log, rate and categorize your sins. We'll keep them safe for you until you're ready to confess.</p>
         </article>
       </div>
@@ -292,7 +303,7 @@
 
 <!--sub form-->
 
-<section class="sub-form section-spacing text-center" id="sub">
+<section class="sub-form biggerform section-spacing text-center" id="sub">
   <div class="container">
     <header class="text-center">
       <h2>Get notified when we launch!</h2>
@@ -545,6 +556,23 @@
 
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>0)
+     {
+        $('.down-arrow').fadeOut();
+     }
+    else
+     {
+      $('.down-arrow').fadeIn();
+     }
+ });
+
+</script>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
