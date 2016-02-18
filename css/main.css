@@ -143,7 +143,7 @@ li {
 }
 
 .header.scrolled img:after {
-  content: ' scrolled';   
+  content: ' scrolled';
 }
 
 a.anchor {
@@ -323,7 +323,7 @@ a.anchor {
 
 .biggerform .form-control {
   padding: 1em 2em;
-  border-radius: 30px;
+  border-radius: 10px;
   margin-bottom: 1.5em;
   box-shadow: none;
 }
@@ -341,7 +341,7 @@ a.anchor {
   border: 1px solid #E5E5E5;
   height: auto;
   padding: 0.75em 2em;
-  border-radius: 7px;
+  border-radius: 5px;
   margin-right: 1em;
 }
 
@@ -352,7 +352,7 @@ a.anchor {
 }
 
 .btn-default {
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 1em 3em;
   color: #fff;
   background-color: #9834DB;
@@ -657,7 +657,7 @@ nav .social {
     top: 0;
     position: absolute;
     z-index: 200;
-}    
+}
 
 /* ==========================================================================
    12.scroll top
@@ -1146,4 +1146,3 @@ position: relative; left: -50%;
 	}
 
 }
-
