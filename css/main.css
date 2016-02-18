@@ -117,9 +117,9 @@ li {
 .welcome-message { max-width:466px; padding-top: 1.5em; }
 
 .welcome-message h3 {
-  margin-top: 36px;
+  margin-top: 46px;
   font-size: 2.2rem;
-  margin-bottom: 18px;
+  margin-bottom: 36px;
 }
 
 .welcome-message .form-inline .form-control {
@@ -657,7 +657,7 @@ nav .social {
     top: 0;
     position: absolute;
     z-index: 200;
-}
+}    
 
 /* ==========================================================================
    12.scroll top
@@ -1075,6 +1075,19 @@ span.features_title_small{
 		margin: 0 auto 50px auto;
 		max-width: 80%;
 	}
+
+	.topper.social {
+   top: 0;
+    left: 50%;
+    position: absolute;
+    z-index: 200;
+    margin: 40px 0 0 0;
+	}
+
+		.topper.social ul {
+position: relative; left: -50%;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
