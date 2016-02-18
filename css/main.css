@@ -877,6 +877,14 @@ ul.countdown li p { font-size: 12.642px; }
 	float:left;
 }
 
+.features_center img {
+	width: 70%;
+}
+
+.smallerimage img {
+	width: 50%;
+}
+
 @media (min-width: 1155px) {
 	.features_left {
 		padding-left: 5%;
