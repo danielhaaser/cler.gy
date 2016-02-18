@@ -114,6 +114,11 @@ li {
 
 .main h1 span { font-weight: 400; }
 
+#welcome-copy {
+    text-align: left;
+    margin-top: 30px;
+}
+
 .welcome-message { max-width:466px; padding-top: 1.5em; }
 
 .welcome-message h3 {
@@ -1108,9 +1113,17 @@ position: relative; left: -50%;
 		align-items: flex-start;
     -webkit-align-items: flex-start;
 	}
+
+    #welcome-copy {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
+
+    #welcome-copy {
+        text-align: center;
+    }
 
 	.features_center {
 		width: 300px;
@@ -1133,6 +1146,7 @@ position: relative; left: -50%;
 }
 
 @media (max-width: 500px) {
+
 	.welcome-message {
 		max-width: 96%;
 	}
