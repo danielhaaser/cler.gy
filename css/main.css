@@ -135,6 +135,7 @@ li {
 	bottom: 30px;
 	left: 30px;
 	width: 40px;
+	z-index: 300;
 }
 
 .down-arrow.scrolled {
@@ -142,14 +143,14 @@ li {
 }
 
 .header.scrolled img:after {
-    content: ' scrolled';   
+  content: ' scrolled';   
 }
 
 a.anchor {
-    display: block;
-    position: relative;
-    top: 0px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: 0px;
+  visibility: hidden;
 }
 
 .down-arrow img {
@@ -636,7 +637,7 @@ nav .social {
   background: #D92DF2;
 }
 
-.main .social li a {
+.topper.social li a {
   color: #FFFFFF;
   width: 40px;
   height: 40px;
@@ -645,14 +646,17 @@ nav .social {
 	font-size: 1em;
 }
 
-.main .social li a:hover {
+.topper.social li a:hover {
   color: #fff;
   border: 2px solid #D92DF2;
   background: #D92DF2;
 }
 
-.main .social {
-	margin: 0 0 0em 1em;
+.topper.social {
+	margin: 1em 0 0em 1em;
+    top: 0;
+    position: absolute;
+    z-index: 200;
 }
 
 /* ==========================================================================
