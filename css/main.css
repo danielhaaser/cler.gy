@@ -84,6 +84,10 @@ li {
   position: relative;
   color: #fff;
   text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .overlay { display: none; }
@@ -115,7 +119,7 @@ li {
 .welcome-message h3 {
   margin-top: 36px;
   font-size: 2.2rem;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .welcome-message .form-inline .form-control {
@@ -124,6 +128,32 @@ li {
 
 .welcome-message .form-inline .form-control, .welcome-message .form-inline .btn-default {
 	width: 100%;
+}
+
+.down-arrow {
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	width: 40px;
+}
+
+.down-arrow.scrolled {
+	display: none;
+}
+
+.header.scrolled img:after {
+    content: ' scrolled';   
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: 40px;
+    visibility: hidden;
+}
+
+.down-arrow img {
+	width: 50px;
 }
 
 /* ==========================================================================
@@ -290,7 +320,7 @@ li {
 
 .sub-form header { margin-bottom: 2.625em; }
 
-.sub-form .form-control {
+.biggerform .form-control {
   padding: 1em 2em;
   border-radius: 30px;
   margin-bottom: 1.5em;
@@ -676,8 +706,6 @@ nav .social {
 
 @media (min-width: 768px) {
 
-.main { padding: .3em 0 4.5em; }
-
 .welcome-message { padding-top: 2.25em; }
 
 .main h1 { font-size: 60px; }
@@ -719,7 +747,7 @@ nav .social {
 }
 
 .main {
-  padding: 1em 0 6em;
+  padding: 1em 0 0em;
   text-align: left;
   background: url(../img/crossback.jpg) center center no-repeat fixed;
   background-size: cover;
@@ -924,6 +952,7 @@ span.features_title_small{
 
 .dropcaps_left, .dropcaps_right {
 	height: 48px;
+	min-width: 48px;
 	text-align: center;
 	color:#222;
 	font-size: 26px;
@@ -965,7 +994,7 @@ span.features_title_small{
 	background-position: 50%;
 	width: 24px;
 	height: 24px;
-	padding: 24px;
+	padding: 23px;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -1037,7 +1066,7 @@ span.features_title_small{
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.welcome-message {
 		margin: 0 auto 50px auto;
 		max-width: 80%;
