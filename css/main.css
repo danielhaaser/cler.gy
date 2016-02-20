@@ -723,7 +723,7 @@ ul.countdown li p { font-size: 20px; }
 
 @media (min-width: 992px) {
 
-.social li {
+.topper.social li {
 	display: block;
   padding-right: 0;
   margin-bottom: 10px;
