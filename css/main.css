@@ -714,6 +714,7 @@ ul.countdown li.seperator {
 }
 
 ul.countdown li p { font-size: 20px; }
+
 }
 
 /* ==========================================================================
@@ -723,7 +724,7 @@ ul.countdown li p { font-size: 20px; }
 @media (min-width: 992px) {
 
 .welcome-message h3 {
-	text-align: left;\
+	text-align: left;
 }
 
 .welcome-message .form-inline {
@@ -854,6 +855,7 @@ ul.countdown li.seperator {
 }
 
 ul.countdown li p { font-size: 12.642px; }
+
 }
 
 
@@ -1113,6 +1115,11 @@ position: relative; left: -50%;
 
 @media (max-width: 768px) {
 
+.welcome-message h3 {
+  font-size: 2.2rem;
+	line-height: 1.6;
+}
+
 .welcome-message .form-inline .form-control {
 	width: 100%;
 	margin-bottom: 10px;
@@ -1144,6 +1151,12 @@ position: relative; left: -50%;
 
 @media (max-width: 500px) {
 
+.welcome-message h3 {
+  font-size: 2rem;
+  margin-top: 36px;
+  margin-bottom: 26px;
+}
+
 	.welcome-message {
 		max-width: 96%;
 	}
@@ -1155,5 +1168,15 @@ position: relative; left: -50%;
 	.welcome-message {
 		padding-top: 6rem;
 	}
+
+}
+
+@media (max-width: 400px) {
+
+.welcome-message h3 {
+  font-size: 1.6rem;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
 
 }
