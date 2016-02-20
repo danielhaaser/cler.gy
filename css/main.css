@@ -124,11 +124,11 @@ li {
 }
 
 .welcome-message .form-inline .form-control {
-	margin-bottom: 10px;
-}
-
-.welcome-message .form-inline .form-control {
-	width: 100%;
+	width: 61%;
+  margin-bottom: 0;
+  display: inline-block;
+	vertical-align: middle;
+	margin-right: 4%;
 }
 
 .welcome-message .form-inline .btn-default {
@@ -695,20 +695,6 @@ nav .social {
    ========================================================================== */
 
 
-
-@media (min-width: 550px) {
-	.welcome-message .form-inline .form-control {
-		display: inline-block;
-		width: auto;
-		vertical-align: middle;
-		margin-bottom: 0;
-	}
-
-	.welcome-message .form-inline .btn-default {
-		width: auto;
-	}
-}
-
 /* ==========================================================================
    13.Small devices (tablets, 768px and up)
    ========================================================================== */
@@ -742,10 +728,6 @@ ul.countdown li p { font-size: 20px; }
 
 .welcome-message .form-inline {
 	text-align: left;
-}
-.welcome-message .form-inline .form-control {
-	width: 61%;
-  margin-bottom: 0;
 }
 
 .navbar-collapse {
@@ -1131,6 +1113,14 @@ position: relative; left: -50%;
 
 @media (max-width: 768px) {
 
+.welcome-message .form-inline .form-control {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.welcome-message .form-inline .btn-default {
+	width: 100%;
+}
 
 	.features_center {
 		width: 300px;
