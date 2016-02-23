@@ -759,7 +759,7 @@ nav .social {
 .main {
   padding: 1em 0 0em;
   text-align: left;
-  background: url(../img/crossback.jpg) center center no-repeat fixed;
+  background: url(../img/crossback.jpg) center center no-repeat;
   background-size: cover;
   min-height: 100%;
 }

@@ -205,7 +205,7 @@ $(function() {
         }, 1000);
     });
 
-    
+
 
     /* ==========================================================================
    parallax scrolling
@@ -213,9 +213,9 @@ $(function() {
 
 
 
-		if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-        		if($(window).width()>992){skrollr.init({forceHeight:false})}$(window).on("resize",function(){if($(window).width()<=	992){skrollr.init().destroy()}});$(window).on("resize",function(){if($(window).width()>992){skrollr.init({forceHeight:false})}});
-    }
+	// 	if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    //     		if($(window).width()>992){skrollr.init({forceHeight:false})}$(window).on("resize",function(){if($(window).width()<=	992){skrollr.init().destroy()}});$(window).on("resize",function(){if($(window).width()>992){skrollr.init({forceHeight:false})}});
+    // }
 
     /* ==========================================================================
    sticky nav
@@ -232,7 +232,6 @@ $(function() {
             menu.addClass('stick');
         } else {
             menu.removeClass('stick');
-
         }
     });
 
