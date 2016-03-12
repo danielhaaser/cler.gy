@@ -1093,14 +1093,14 @@ span.features_title_small{
 
 	.topper.social {
    top: 0;
-    left: 50%;
-    position: absolute;
+    width: 100%;
+    text-align: center;
     z-index: 200;
     margin: 40px 0 0 0;
 	}
 
 		.topper.social ul {
-position: relative; left: -50%;
+		position: relative;
 	}
 
 	.smallerimage img {
