@@ -466,8 +466,7 @@ ul.countdown li p {
    ========================================================================== */
 
 .twitter-share-button {
-	width: 56px !important;
-	margin-left: 3px; }
+  margin: 0; }
 .fb-share-button {
     vertical-align: top; }
 .fb_iframe_widget {
@@ -640,6 +639,10 @@ nav .social {
   text-align: center;
 }
 
+.navbar .social li {
+  padding-right: 2px;
+}
+
 .social li:last-child { padding-right: 0; }
 
 .social li a {
@@ -711,8 +714,24 @@ nav .social {
 
 
 /* ==========================================================================
-   13.Small devices (tablets, 550px and up)
+   Press Page
    ========================================================================== */
+
+.container.presspage {
+  max-width: 960px;
+}
+
+.presspage h4 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+p.tweettext {
+  margin-bottom: 8px;
+}
+
+.presspage .twitter-share-button {
+  margin: 0 0 8px 0; }
 
 
 /* ==========================================================================
@@ -763,11 +782,11 @@ ul.countdown li p { font-size: 20px; }
 
 .navbar-default .navbar-nav > li > a.btn-default {
 	width: auto;
-	margin: auto;
+	margin: 0 auto 0 20px;
 }
 
 nav .social {
-		margin: 0px 20px 0px 10px;
+		margin: 0px 0px 0px 10px;
 }
 
 .navbar .container { width: 970px; }
