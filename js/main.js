@@ -223,7 +223,7 @@ $(function() {
 
 
 
-    var menu = $('.navbar');
+    var menu = $('.navbar-scroll');
 
     var stickyNav = menu.offset().top;
 
