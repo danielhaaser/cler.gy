@@ -580,17 +580,8 @@ ul.countdown li p {
 
 .sub-form {   background: url(../img/confessionpattern.png) center center repeat scroll; }
 
-.sub-form-presspage::after {  
-  background: #F7F7F7; 
-  content: "";
-  opacity: 0.8;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-  background: url(../img/confessionpattern.png) center center repeat scroll; }
+.sub-form.lighterbg{  
+  background: url(../img/confessionpattern_lighter.png) center center repeat scroll; }
 
 .site-footer.section-spacing { padding: 4.5em 0; }
 
