@@ -721,11 +721,14 @@ nav .social {
    ========================================================================== */
 
 .container.presspage {
-  max-width: 960px;
+  max-width: 1040px;
+  background-color: white;
+  padding-top: 15px;
 }
 
 .presspage h4 {
-  margin-bottom: 30px;
+  margin-top: 45px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
@@ -734,7 +737,24 @@ p.tweettext {
 }
 
 .presspage .twitter-share-button {
-  margin: 0 0 8px 0; }
+  margin: 0 0 8px 0; 
+}
+
+.press-thumb-parent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 0px -15px 0px -15px;
+}
+
+.press-thumb-child {
+  margin: 15px;
+  border-width: 0.5px;
+  border-color: rgb(152, 52, 219);
+  border-style: solid;
+}
 
 
 /* ==========================================================================
