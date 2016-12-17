@@ -757,6 +757,19 @@ nav .social {
   border-style: solid;
 }
 
+.press-about-container {
+  margin-bottom: 60px;
+}
+
+.press-about-name {
+  text-align: center;
+}
+
+.press-about-image {
+  display: table;
+  margin: auto auto 30px auto;
+}
+
 
 /* ==========================================================================
    13.Small devices (tablets, 768px and up)
