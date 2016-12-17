@@ -732,12 +732,13 @@ nav .social {
   text-transform: uppercase;
 }
 
-p.tweettext {
+.presspage .twitter-share-line {
+  align-content: center;
   margin-bottom: 8px;
 }
 
 .presspage .twitter-share-button {
-  margin: 0 0 8px 0; 
+  margin: 0px 8px 0px 0px; 
 }
 
 .press-thumb-parent {
