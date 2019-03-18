@@ -964,8 +964,12 @@ ul.countdown li p { font-size: 12.642px; }
 	width: 70%;
 }
 
-.smallerimage img video {
+.smallerimage img {
 	width: 50%;
+}
+
+.smallerimage video {
+  width: 50%;
 }
 
 @media (min-width: 1155px) {
@@ -1151,40 +1155,6 @@ span.features_title_small{
 .features_item:hover .privacy-screen {
     background-image:url('../img/icons/screen-white.svg');
 }
-/*
-#pickpriest_video_container {
-  width: 320px;
-  height: 668px;
-  position: relative;
-}
-
-#pickpriest_video_container:after {
-  content: '';
-  display: block;
-  background:url('../img/videoMockupFrame.png') no-repeat top left transparent;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  z-index: 10;
-}
-
-#pickpriest_video_container video {
-  position: absolute;
-  width: 275px;
-  height: 490px;
-  top: 89px;
-  left: 22px;
-  z-index: 5;
-}
-
-#responsive_resize_video {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}*/
-
 
 /*MAX WIDTH RULES*/
 
@@ -1212,9 +1182,13 @@ span.features_title_small{
 		position: relative;
 	}
 
-	.smallerimage img video {
+	.smallerimage img {
     width: 70%;
-}
+  }
+
+  .smallerimage video {
+    width: 70%;
+  }
 
 }
 
@@ -1266,19 +1240,23 @@ span.features_title_small{
 
 @media (max-width: 500px) {
 
-.welcome-message h3 {
-  font-size: 2rem;
-  margin-top: 36px;
-  margin-bottom: 26px;
-}
+  .welcome-message h3 {
+    font-size: 2rem;
+    margin-top: 36px;
+    margin-bottom: 26px;
+  }
 
 	.welcome-message {
 		max-width: 96%;
 	}
-		.smallerimage img video {
+
+	.smallerimage img {
     width: 90%;
 	}
 
+  .smallerimage video {
+    width: 90%;
+  }
 
 	.welcome-message {
 		padding-top: 6rem;
