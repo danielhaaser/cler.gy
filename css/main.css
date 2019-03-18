@@ -1152,6 +1152,52 @@ span.features_title_small{
     background-image:url('../img/icons/screen-white.svg');
 }
 
+#pickpriest_video_container {
+  /*max-width: 320px;*/
+  /*max-height: 668px;*/
+  /*height: auto;*/
+  /*vertical-align: middle;*/
+
+  /*original*/
+  width: 320px;
+  height: 668px;
+  /*position: relative;*/
+}
+
+#pickpriest_video_container:after {
+  /*max-width: 100%;*/
+  /*height: auto;*/
+  /*vertical-align: middle;*/
+  /*text-align: center;*/
+
+  /*original*/
+  content: '';
+  /*display: block;*/
+  background:url('../img/videoMockupFrame.png') no-repeat top left transparent;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 10;
+}
+
+#pickpriest_video_container video {
+  /*original*/
+  position: absolute;
+  width: 275px;
+  height: 490px;
+  top: 89px;
+  left: 22px;
+  z-index: 5;
+}
+
+#responsive_resize_video {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 
 /*MAX WIDTH RULES*/
 
