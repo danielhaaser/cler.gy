@@ -56,7 +56,7 @@ a:focus {
 
 a:focus { outline: none; }
 
-img {
+img video {
   max-width: 100%;
   height: auto;
 }
@@ -968,6 +968,10 @@ ul.countdown li p { font-size: 12.642px; }
 	width: 50%;
 }
 
+.smallerimage video {
+  width: 50%;
+}
+
 @media (min-width: 1155px) {
 	.features_left {
 		padding-left: 5%;
@@ -1152,7 +1156,6 @@ span.features_title_small{
     background-image:url('../img/icons/screen-white.svg');
 }
 
-
 /*MAX WIDTH RULES*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1181,7 +1184,11 @@ span.features_title_small{
 
 	.smallerimage img {
     width: 70%;
-}
+  }
+
+  .smallerimage video {
+    width: 70%;
+  }
 
 }
 
@@ -1233,19 +1240,23 @@ span.features_title_small{
 
 @media (max-width: 500px) {
 
-.welcome-message h3 {
-  font-size: 2rem;
-  margin-top: 36px;
-  margin-bottom: 26px;
-}
+  .welcome-message h3 {
+    font-size: 2rem;
+    margin-top: 36px;
+    margin-bottom: 26px;
+  }
 
 	.welcome-message {
 		max-width: 96%;
 	}
-		.smallerimage img {
+
+	.smallerimage img {
     width: 90%;
 	}
 
+  .smallerimage video {
+    width: 90%;
+  }
 
 	.welcome-message {
 		padding-top: 6rem;
